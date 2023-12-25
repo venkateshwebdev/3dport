@@ -28,7 +28,7 @@ const About = () => {
         console.log("called", counter);
         setImage(imageList[counter]);
         setCounter((prev) => (prev + 1) % imageList.length);
-      }, 500);
+      }, 200);
       return () => clearInterval(interval);
     }
   }, [showImage,counter, imageList]);
