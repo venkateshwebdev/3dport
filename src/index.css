@@ -19,7 +19,9 @@ body{
 }
 p{
   font-family: 'Poppins', sans-serif;
-
+}
+a{
+  font-family: 'Poppins', sans-serif;
 }
 
 *::-webkit-scrollbar{

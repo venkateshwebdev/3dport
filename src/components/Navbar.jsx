@@ -33,8 +33,17 @@ const Navbar = () => {
               opacity: 1,
               transition: { type: "keyframes", duration: 0.5 },
             }}
-            className="absolute shadow-2xl z-20 h-screen w-1/2 max-md:w-[80%] top-0 right-0 bg-white rounded-l-3xl"
-          ></motion.div>
+            className="absolute uppercase text-3xl max-md:text-xl items-center text-left justify-between shadow-2xl flex-col flex z-20 h-screen w-1/2 max-md:w-[80%] top-0 right-0 bg-gray-100 p-16 py-32 rounded-l-3xl"
+          >
+            {/* <div className="h-96 w-96 rounded-full border-[1px] border-black absolute -bottom-16 -right-16">
+            <div className="h-80 w-80 rounded-full border-[1px] border-black"></div>
+            </div> */}
+            {/* <img src="/pow.png" className="absolute opacity-10" /> */}
+            <motion.a initial={{x:100,opacity:0}} animate={{x:0,opacity:1,transition:{type:"keyframes",delay:.3}}} exit={{x:100,opacity:0}} href="#About">About</motion.a>
+            <motion.a initial={{x:100,opacity:0}} animate={{x:0,opacity:1,transition:{type:"keyframes",delay:.4}}} exit={{x:100,opacity:0}} href="#Skills">Skills</motion.a>
+            <motion.a initial={{x:100,opacity:0}} animate={{x:0,opacity:1,transition:{type:"keyframes",delay:.5}}} exit={{x:100,opacity:0}} href="#Projects">Projects</motion.a>
+            <motion.a initial={{x:100,opacity:0}} animate={{x:0,opacity:1,transition:{type:"keyframes",delay:.6}}} exit={{x:100,opacity:0}} href="#Contact">Contact</motion.a>
+          </motion.div>
         )}
       </AnimatePresence>
     </div>

@@ -1,30 +1,36 @@
-import React, { useRef } from "react";
+import React, { useContext, useRef } from "react";
 import { useGLTF, useAnimations, useScroll } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
+import { ScrollContext } from "../../scrollContext";
 
 export function CoolMan(props) {
+    const {setShowImage} = useContext(ScrollContext)
     const scroll = useScroll()
   const group = useRef();
   const { nodes, materials, animations } = useGLTF("/cool_man.glb");
   const { actions } = useAnimations(animations, group);
 
   useFrame(()=>{
-    console.log(actions)
+    // console.log(actions)
+    if(scroll.offset>0.05){
+        setShowImage(true)
+    }
     if(scroll.offset<0.1){
         actions["salute"].fadeOut().stop()   
     }
     if(scroll.offset>0.1 && scroll.offset<0.8){
+        setShowImage(true)
         actions["salute"].fadeIn().play()
         actions["Pose"].fadeOut().stop()
         group.current.scale.x = 10-scroll.offset*8
         group.current.scale.z = 10-scroll.offset*8
         group.current.scale.y = 10-scroll.offset*8
-        group.current.position.y = -16+scroll.offset*14
+        group.current.position.y = -16+scroll.offset*16
         group.current.rotation.y=0
     }
-    if(scroll.offset>0.8){
-        actions["Pose"].fadeIn().play()
-        group.current.rotation.y +=0.01
+    if(scroll.offset>0.9){
+        actions["salute"].fadeOut().stop()
+        setShowImage(false)
     }
   })
   return (
