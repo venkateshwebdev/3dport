@@ -1,3 +1,5 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -13,8 +15,12 @@ body{
   background-color:#eddfd8;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  font-family: 'Bebas Neue', sans-serif;
 }
+p{
+  font-family: 'Poppins', sans-serif;
 
+}
 
 *::-webkit-scrollbar{
   width: 10px; 
