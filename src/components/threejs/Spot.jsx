@@ -12,6 +12,9 @@ export function CoolMan(props) {
 
   useFrame(()=>{
     // console.log(actions)
+    if(scroll.offset==0){
+        setShowImage(false)
+    }
     if(scroll.offset>0.05){
         setShowImage(true)
     }
@@ -19,7 +22,6 @@ export function CoolMan(props) {
         actions["salute"].fadeOut().stop()   
     }
     if(scroll.offset>0.1 && scroll.offset<0.8){
-        setShowImage(true)
         actions["salute"].fadeIn().play()
         actions["Pose"].fadeOut().stop()
         group.current.scale.x = 10-scroll.offset*8
