@@ -5,7 +5,7 @@ const Home = () => {
       <div className="bg-[#ff0000] w-[104px] h-[300px] rounded-full blur-[250px] absolute top-0 right-0"></div>
 
       <div
-        className="flex group max-md:w-full  flex-col text-6xl max-md:text-3xl font-bold uppercase text-center text-transparent relative"
+        className="flex group max-md:w-full  flex-col text-8xl max-md:text-5xl font-bold uppercase text-center text-transparent relative"
         style={{ WebkitTextStroke: "1px black" }}
       >
         <motion.img
@@ -23,7 +23,7 @@ const Home = () => {
       </div>
       {/* <div className="text-xl uppercase text-center font-semibold">Web Developer</div> */}
       <div
-        className="text-2xl absolute -left-5 uppercase font-bold text-transparent -rotate-90"
+        className="text-4xl max-md:text-2xl absolute -left-5 uppercase font-bold text-transparent -rotate-90"
         style={{ WebkitTextStroke: "1px black" }}
       >
         portfolio
