@@ -12,7 +12,7 @@ const About = () => {
                     <Scene />
                     </Scroll>
                 </ScrollControls>
-                <OrbitControls enableZoom={false}  />
+                {/* <OrbitControls enableZoom={false}  /> */}
             </Canvas>
         </motion.div>
     );
