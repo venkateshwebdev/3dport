@@ -1,10 +1,11 @@
 import React, { useContext, useRef } from "react";
-import { useGLTF, useAnimations, useScroll } from "@react-three/drei";
+import { useGLTF, useAnimations, useScroll, Scroll } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import { ScrollContext } from "../../scrollContext";
+import { ScrollContext, ScrollCountContext } from "../../scrollContext";
 
 export function CoolMan(props) {
     const {setShowImage} = useContext(ScrollContext)
+    const {setScrollValue} = useContext(ScrollCountContext)
     const scroll = useScroll()
   const group = useRef();
   const { nodes, materials, animations } = useGLTF("/cool_man.glb");
@@ -33,6 +34,7 @@ export function CoolMan(props) {
     if(scroll.offset>0.9){
         actions["salute"].fadeOut().stop()
         setShowImage(false)
+        setScrollValue(scroll.offset)
     }
   })
   return (
