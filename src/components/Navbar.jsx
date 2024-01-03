@@ -39,10 +39,10 @@ const Navbar = () => {
             <div className="h-80 w-80 rounded-full border-[1px] border-black"></div>
             </div>
             {/* <img src="/pow.png" className="absolute opacity-10" /> */}
-            <motion.a className="z-10" initial={{x:100,opacity:0}} animate={{x:0,opacity:1,transition:{type:"keyframes",delay:.3}}} exit={{x:100,opacity:0}} href="#About">About</motion.a>
-            <motion.a className="z-10" initial={{x:100,opacity:0}} animate={{x:0,opacity:1,transition:{type:"keyframes",delay:.4}}} exit={{x:100,opacity:0}} href="#Skills">Skills</motion.a>
-            <motion.a className="z-10" initial={{x:100,opacity:0}} animate={{x:0,opacity:1,transition:{type:"keyframes",delay:.5}}} exit={{x:100,opacity:0}} href="#Projects">Projects</motion.a>
-            <motion.a className="z-10" initial={{x:100,opacity:0}} animate={{x:0,opacity:1,transition:{type:"keyframes",delay:.6}}} exit={{x:100,opacity:0}} href="#Contact">Contact</motion.a>
+            <motion.a className="z-10" onClick={()=>setEnableNavbar(false)} initial={{x:100,opacity:0}} animate={{x:0,opacity:1,transition:{type:"keyframes",delay:.3}}} exit={{x:100,opacity:0}} href="#About">About</motion.a>
+            <motion.a className="z-10" onClick={()=>setEnableNavbar(false)}  initial={{x:100,opacity:0}} animate={{x:0,opacity:1,transition:{type:"keyframes",delay:.4}}} exit={{x:100,opacity:0}} href="#Skills">Skills</motion.a>
+            <motion.a className="z-10" onClick={()=>setEnableNavbar(false)} initial={{x:100,opacity:0}} animate={{x:0,opacity:1,transition:{type:"keyframes",delay:.5}}} exit={{x:100,opacity:0}} href="#Projects">Projects</motion.a>
+            <motion.a className="z-10" onClick={()=>setEnableNavbar(false)} initial={{x:100,opacity:0}} animate={{x:0,opacity:1,transition:{type:"keyframes",delay:.6}}} exit={{x:100,opacity:0}} href="#Contact">Contact</motion.a>
           </motion.div>
         )}
       </AnimatePresence>

@@ -1,7 +1,8 @@
 import { motion } from "framer-motion";
+import { useEffect, useRef, useState } from "react";
 const Home = () => {
   return (
-    <div className="h-screen relative w-full flex flex-col gap-5 items-center justify-center overflow-hidden snap-start">
+    <div id="Home" className="h-screen scroll-smooth relative w-full flex flex-col gap-5 items-center justify-center overflow-hidden snap-start transition-all">
       <div className="bg-[#ff0000] w-[104px] h-[300px] rounded-full blur-[250px] absolute top-0 right-0"></div>
 
       <div
