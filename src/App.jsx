@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Suspense, lazy, useEffect, useState } from "react";
 import About from "./About";
 import Contact from "./Contact";
 import Home from "./Hero";
@@ -10,6 +10,8 @@ import { ScrollContext, ScrollCountContext } from "./scrollContext";
 import { motion } from "framer-motion";
 const App = () => {
   const [position, setPosition] = useState({ x: 0, y: 0 });
+
+  const FooterSection = lazy(() => import('./FooterSection'));
 
   useEffect(() => {
     const updateMousePosition = (e) => {
@@ -50,6 +52,9 @@ const App = () => {
       <Skills />
       <Projects />
       <Contact />
+      <Suspense>
+      <FooterSection />
+      </Suspense>
       <Footer />
     </div>
   );
