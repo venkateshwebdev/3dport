@@ -5,7 +5,7 @@ const Navbar = () => {
   const [enableNavbar, setEnableNavbar] = useState(false);
   return (
     <div className="h-36 fixed w-full flex items-center justify-between px-10 z-50">
-      <div className="text-xl font-bold uppercase">Venkatesh</div>
+      <div className=" text-4xl max-md:text-xl font-bold uppercase">.V.</div>
       <div
         className={`flex flex-col gap-2 z-50 transition-all duration-500 cursor-[url(hand.cur),_pointer] ${
           enableNavbar && "rotate-45"

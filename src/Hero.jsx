@@ -29,6 +29,15 @@ const Home = () => {
       >
         portfolio
       </div>
+
+      <div
+        className="text-4xl max-md:text-2xl absolute overflow-hidden right-0 z-40 uppercase font-bold text-transparent rotate-90 border-2 border-black flex items-center justify-between rounded-2xl"
+        style={{ WebkitTextStroke: "1px black" }}
+      >
+        <span className="py-2 px-5 max-md:py-1 max-md:px-3 cursor-pointer">3D</span>
+        <span className="py-2 px-5 max-md:py-1 max-md:px-3 bg-black text-white cursor-pointer" style={{WebkitTextStrokeColor:"3px white"}}>2D</span>
+      </div>
+
       <div className=" absolute right-14 h-[1000px] w-1/4 border-[1px] border-black opacity-10 "></div>
     </div>
   );

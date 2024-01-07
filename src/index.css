@@ -17,6 +17,9 @@ body{
   scroll-behavior: smooth;
   font-family: 'Bebas Neue', sans-serif;
 }
+.links{
+  font-family: 'Bebas Neue', sans-serif;
+}
 p{
   font-family: 'Poppins', sans-serif;
 }
@@ -26,7 +29,7 @@ a{
 
 *::-webkit-scrollbar{
   width: 10px; 
-  display: none; 
+  /* display: none;  */
 }
 
 *::-webkit-scrollbar-thumb{
