@@ -9,22 +9,17 @@ import Navbar from "./components/Navbar";
 import { ScrollContext, ScrollCountContext } from "./scrollContext";
 import { motion } from "framer-motion";
 const App = () => {
-
-  const FooterSection = lazy(() => import('./FooterSection'));
+  const FooterSection = lazy(() => import("./FooterSection"));
   return (
     <div className=" snap-y snap-mandatory h-screen overflow-y-auto">
       <Navbar />
       <Home />
-      {/* <ScrollCountContext.Provider value={{scrollValue,setScrollValue}}>
-    <ScrollContext.Provider value={{showImage,setShowImage}}>
-    <About />
-    </ScrollContext.Provider>
-    </ScrollCountContext.Provider> */}
+      <About />
       <Skills />
       <Projects />
       <Contact />
       <Suspense>
-      <FooterSection />
+        <FooterSection />
       </Suspense>
       <Footer />
     </div>

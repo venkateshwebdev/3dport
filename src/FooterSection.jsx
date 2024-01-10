@@ -5,8 +5,8 @@ const FooterSection = () => {
     fadeIn: { y: 0, opacity: 1, transition: { type: "keyframes", delay: 0.3 } },
   };
   return (
-    <div className="relative group h-screen w-full snap-center z-[999]  flex items-center justify-center overflow-hidden">                                                                                          
-      <div className="absolute top-0 left-0 h-screen w-full text-transparent flex flex-col items-end p-16 pt-[150px] bg-[#252525]">
+    <div className="relative group h-screen w-full snap-center z-[999]  flex items-center justify-center overflow-hidden bg-[url('/rectangle_large_type_2_f8fc18a715f34e397691436c8d79b7a4.webp')] bg-center">                                                                         
+      <div className="absolute top-0 left-0 h-screen w-full text-transparent flex flex-col items-end justify-center p-16 max-md:p-3  bg-[#252525fb]">
         <motion.a
           href="/"
           variants={variants}
@@ -19,7 +19,7 @@ const FooterSection = () => {
           className="links text-9xl max-md:text-4xl overflow-hidden hover:underline underline-offset-8"
           style={{ WebkitTextStroke: "1px white" }}
         >
-          <span className="text-4xl max-md:text-xl text-white px-10">01</span> 3D Portfolio
+          <span className="text-4xl max-md:text-xl text-center text-white px-10">01</span> 3D PortFolio
         </motion.a>
         <motion.a
           href="/"

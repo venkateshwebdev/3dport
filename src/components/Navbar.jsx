@@ -33,7 +33,7 @@ const Navbar = () => {
               opacity: 1,
               transition: { type: "keyframes", duration: 0.5 },
             }}
-            className="absolute uppercase text-3xl max-md:text-xl items-center text-left justify-center gap-10 shadow-2xl flex-col flex z-20 h-screen w-1/2 max-md:w-[80%] top-0 right-0 bg-gray-100 p-16 py-32 rounded-l-3xl"
+            className="absolute uppercase backdrop-blur-xl text-3xl max-md:text-xl items-center text-left bg-gray-200 justify-center gap-10 shadow-2xl flex-col flex z-20 h-screen w-1/2 max-md:w-[80%] top-0 right-0 p-16 py-32 rounded-l-3xl overflow-hidden"
           >
             <div className="h-96 w-96 rounded-full border-[1px] border-black opacity-10 absolute -bottom-16 -right-16 z-0">
             <div className="h-80 w-80 rounded-full border-[1px] border-black"></div>

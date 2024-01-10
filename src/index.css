@@ -27,6 +27,11 @@ a{
   font-family: 'Poppins', sans-serif;
 }
 
+
+.poppins{
+  font-family: 'Poppins', sans-serif;
+}
+
 *::-webkit-scrollbar{
   width: 10px; 
   /* display: none;  */
@@ -48,4 +53,10 @@ a{
 .about::-webkit-scrollbar{
   display: none;
   
+}
+
+@media only screen and (max-width: 600px) {
+  *::-webkit-scrollbar{
+    width: 5px;
+  }
 }

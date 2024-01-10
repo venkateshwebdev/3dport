@@ -31,11 +31,11 @@ const Home = () => {
       </div>
 
       <div
-        className="text-4xl max-md:text-2xl absolute overflow-hidden right-0 z-40 uppercase font-bold text-transparent rotate-90 border-2 border-black flex items-center justify-between rounded-2xl"
-        style={{ WebkitTextStroke: "1px black" }}
+        className="text-4xl max-md:text-xl absolute overflow-hidden gap-2 -right-5 rotate-90 z-40 uppercase font-bold text-black flex items-center justify-between rounded-md"
       >
-        <span className="py-2 px-5 max-md:py-1 max-md:px-3 cursor-pointer">3D</span>
-        <span className="py-2 px-5 max-md:py-1 max-md:px-3 bg-black text-white cursor-pointer" style={{WebkitTextStrokeColor:"3px white"}}>2D</span>
+        <span>3D</span>
+        <span className="w-12 max-md:w-9 h-1 border-2 border-black"></span>
+        <span className="rounded-full border-2 border-black font-medium flex items-center justify-center bg-black text-white h-[60px] w-[60px] max-md:h-[40px] max-md:w-[40px] ">2D</span>
       </div>
 
       <div className=" absolute right-14 h-[1000px] w-1/4 border-[1px] border-black opacity-10 "></div>
