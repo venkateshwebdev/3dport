@@ -50,6 +50,9 @@ a{
   background-color:#7f1d1d
 }
 
+.noScrollBar::-webkit-scrollbar{
+  display: none;
+}
 .about::-webkit-scrollbar{
   display: none;
   

@@ -1,27 +1,38 @@
-import { useEffect, useRef } from "react";
-import HeadingText from "./components/HeadingText";
+// import { AnimatePresence, motion } from "framer-motion";
+import { useState } from "react";
 
 const Projects = () => {
-  const data = [1, 2, 3, 5, 6, 7, 89, 0];
+  const projects = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  const [modal, setModal] = useState(0);
   return (
     <div
       id="Projects"
-      className="min-h-screen w-full relative snap-center flex flex-col  items-center justify-center p-5 transition-all overflow-hidden"
+      className="min-h-screen w-full relative snap-center flex flex-col  items-center justify-center transition-all overflow-hidden"
     >
-      {/* <HeadingText title={"PROJECTS"} /> */}
-      <div className="h-full w-full">
-        {/* {data.map((e) => (
-          <div className="min-h-screen w-full flex py-[10%] px-[5%] ">
-            <div className="w-[50%] h-full">Hello</div>
-            <div className="border-4 border-black w-[50%] relative z-10 rounded-md">
-              <div className=" absolute text-6xl text-black bottom-0 z-30">
-                0{e}
-              </div>
-              <div className="h-full w-full bg-red-600 absolute shadow-xl -left-1 top-1 z-0 rounded-md"></div>
-            </div>
+      <div className="h-full w-full flex gap-10 overflow-x-auto noScrollBar overflow-hidden py-7 px-[25%]">
+        {projects.map((item) => (
+          <div
+            key={item}
+            className="h-[400px] bg-[#00ff0020] skew-x-3 skew-y-6 relative w-[300px] flex-shrink-0 border-2 shadow-lg border-black " onClick={()=>setModal(item)}
+          >
+            {/* <img src="public/spi2.webp" className="h-full w-full" /> */}
+            <div className="text-5xl text-transparent font-bold absolute -bottom-5 -left-5 z-20" style={{WebkitTextStroke:"1px black"}}>#00{item}</div>
           </div>
-        ))} */}
+        ))}
       </div>
+      <div className="absolute right-5 bottom-5 text-2xl max-md:text-lg font-bold">
+        #PROJECTS
+      </div>
+      {/* <AnimatePresence>
+        {modal && (
+          <motion.div
+            initial={{ y: 1000, opacity: 0 }}
+            exit={{ y: 1000, opacity: 0 }}
+            animate={{ y: 0, opacity: 1 }}
+            className="absolute top-0 h-screen bg-[#25252590] w-full backdrop-blur-md z-[999]"
+          ></motion.div>
+        )}
+      </AnimatePresence> */}
     </div>
   );
 };

@@ -1,10 +1,9 @@
 import { motion } from "framer-motion";
-import HeadingText from "./components/HeadingText";
 const About = () => {
   return (
     <div
       id="About"
-      className="min-h-screen w-full snap-center flex max-md:flex-col items-center justify-center transition-all ease-in scroll-smooth p-16 max-md:p-5"
+      className=" relative min-h-screen w-full snap-center flex max-md:flex-col items-center justify-center transition-all ease-in scroll-smooth p-16 max-md:p-5"
     >
       {/* <HeadingText title={"ABOUT ME"} /> */}
 
@@ -20,7 +19,7 @@ const About = () => {
       <div className="p-5 w-[50%] max-md:w-full">
 
       </div>
-
+      <div className="absolute right-5 bottom-5 text-2xl max-md:text-lg font-bold">#ME</div>
     </div>
   );
 };

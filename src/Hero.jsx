@@ -10,8 +10,8 @@ const Home = () => {
         style={{ WebkitTextStroke: "1px black" }}
       >
         <motion.img
-          initial={{ x: 500 }}
-          animate={{ x: 0, transition: { type: "keyframes", duration: 2 } }}
+          // initial={{ x: 500 }}
+          // animate={{ x: 0, transition: { type: "keyframes", duration: 2 } }}
           className="absolute -top-52 right-0 h-52 w-52"
           src="/58d9d0_70b5805c55a749279ed92a804f1f94ba~mv2.gif"
         />
