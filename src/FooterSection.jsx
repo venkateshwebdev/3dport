@@ -5,7 +5,7 @@ const FooterSection = () => {
     fadeIn: { y: 0, opacity: 1, transition: { type: "keyframes", delay: 0.3 } },
   };
   return (
-    <div className="relative group h-screen w-full snap-center z-[999]  flex items-center justify-center overflow-hidden bg-[url('/rectangle_large_type_2_f8fc18a715f34e397691436c8d79b7a4.webp')] bg-center">                                                                         
+    <div className="relative footerCursor group h-screen w-full snap-center z-[999]  flex items-center justify-center overflow-hidden bg-[url('/rectangle_large_type_2_f8fc18a715f34e397691436c8d79b7a4.webp')] bg-center">                                                                         
       <div className="absolute top-0 left-0 h-screen w-full text-transparent flex flex-col items-end justify-center p-16 max-md:p-3  bg-[#252525fb]">
         <motion.a
           href="/"
@@ -54,8 +54,8 @@ const FooterSection = () => {
         <img src="/rb-crow.gif" className="h-[150px]" alt="crow" />
       </div> */}
       <div className="absolute top-0 left-0 text-white p-10 text-4xl max-md:text-2xl w-full max-md:text-center z-50">Venkatesh</div>
-      <div className="absolute h-[2000px] w-[30%] border-2 border-gray-50 -left-10"></div>
-      <div className="absolute h-[150px] max-md:bg-[#252525] w-[2000px] border-2 border-gray-50 -top-10"></div>
+      <div className="absolute h-[2000px] w-[30%]  -left-10"></div>
+      <div className="absolute h-[150px] max-md:bg-[#252525] w-[2000px] -top-10"></div>
     </div>
   );
 };

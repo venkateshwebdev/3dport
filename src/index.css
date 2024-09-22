@@ -49,6 +49,12 @@ a{
 *::-webkit-scrollbar-track-piece{
   background-color:#7f1d1d
 }
+.footerCursor{
+  cursor: url('Normal Select.cur'), default;
+}
+.custom-cursor {
+  cursor: url('hand.cur'), pointer;
+}
 
 .noScrollBar::-webkit-scrollbar{
   display: none;
