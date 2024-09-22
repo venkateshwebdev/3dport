@@ -147,7 +147,7 @@ const HiddenFlow = () => {
   return (
         <div
       id="Skills"
-      className="h-screen w-full relative snap-center z-[999] flex flex-col items-center justify-center  pb-16 transition-all"
+      className="h-screen w-full  relative snap-center z-[999] flex flex-col items-center justify-center  pb-16 transition-all"
     >
     <ReactFlow
     nodes={nodes}

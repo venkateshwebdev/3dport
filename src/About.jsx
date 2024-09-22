@@ -17,8 +17,8 @@ const About = () => {
   }, []);
 
   const calculateInnerCirclePosition = (outerCirclePosition) => {
-    const offsetX = (mousePosition.x - outerCirclePosition.x) / 10;
-    const offsetY = (mousePosition.y - outerCirclePosition.y) / 10;
+    const offsetX = ((mousePosition.x - outerCirclePosition.x) / window.innerWidth) * 32 - 8;
+    const offsetY = ((mousePosition.y - outerCirclePosition.y) / window.innerHeight) * 32 - 8;
     const maxOffset = 16; // Half of the inner circle's width/height
 
     // const clampedOffsetX = Math.max(-maxOffset, Math.min(maxOffset, offsetX));
@@ -30,7 +30,7 @@ const About = () => {
   return (
     <div
       id="About"
-      className="relative min-h-screen w-full snap-center flex max-md:flex-col items-center justify-center transition-all ease-in scroll-smooth p-16 max-md:p-5"
+      className="relative min-h-screen footerCursor w-full snap-center flex max-md:flex-col items-center justify-center transition-all ease-in scroll-smooth p-16 max-md:p-5"
     >
       {/* <HeadingText title={"ABOUT ME"} /> */}
 
@@ -45,12 +45,12 @@ const About = () => {
           Let's collaborate for an extraordinary digital future!
         </motion.div>
       </div>
-      <div className="p-5 h-full w-[50%] max-md:w-full items-center justify-center flex">
+      <div className="p-5 h-full w-[50%] max-md:w-full items-center justify-center flex gap-6">
         <div className="h-32 w-32 rounded-full flex items-center justify-center border border-black relative">
-          <div className="h-16 w-16 bg-black rounded-full" style={calculateInnerCirclePosition({ x: 0, y: 0 })}></div>
+          <div className="h-16 w-16 bg-black rounded-full " style={calculateInnerCirclePosition({ x: 0, y: 0 })}></div>
         </div>
         <div className="h-32 w-32 rounded-full flex items-center justify-center border border-black relative">
-          <div className="h-16 w-16 bg-black rounded-full" style={calculateInnerCirclePosition({ x: 0, y: 0 })}></div>
+          <div className="h-16 w-16 bg-black rounded-full " style={calculateInnerCirclePosition({ x: 0, y: 0 })}></div>
         </div>
       </div>
       <div className="absolute right-5 bottom-5 text-2xl max-md:text-lg font-bold">#ME</div>
